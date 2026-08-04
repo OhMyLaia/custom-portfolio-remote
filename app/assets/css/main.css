@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand-primary: #1d4ed8;
+  --color-brand-secondary: #9333ea;
+  --color-brand-accent: #f59e0b;
+  --color-brand-bg: #ffffff;
+  --color-brand-text: #111827;
+}
