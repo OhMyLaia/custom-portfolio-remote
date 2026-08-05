@@ -8,10 +8,10 @@ const socialLinks = computed(() => {
 </script>
 
 <template>
-  <div>
-    <header>
-      <span>{{ profile?.name }}</span>
-      <nav>
+  <div class="max-w-2xl mx-auto px-4">
+    <header class="flex items-center justify-between py-4">
+      <span class="font-bold">{{ profile?.name }}</span>
+      <nav class="flex gap-4">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -19,13 +19,15 @@ const socialLinks = computed(() => {
       </nav>
     </header>
 
-    <main>
+    <main class="flex flex-col gap-10 py-6">
       <slot />
     </main>
 
-    <footer>
+    <footer class="flex items-center justify-between py-6 text-sm">
       <span>&copy; {{ new Date().getFullYear() }} {{ profile?.name }}</span>
-      <a v-for="[network, url] in socialLinks" :key="network" :href="url" target="_blank" rel="noopener">{{ network }}</a>
+      <div class="flex gap-3">
+        <a v-for="[network, url] in socialLinks" :key="network" :href="url" target="_blank" rel="noopener">{{ network }}</a>
+      </div>
     </footer>
   </div>
 </template>
