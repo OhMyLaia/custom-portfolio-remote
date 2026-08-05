@@ -1,5 +1,21 @@
 <script setup lang="ts">
 const profile = useProfile()
+
+const form = reactive({ name: '', email: '', message: '' })
+const status = ref<'idle' | 'sending' | 'sent' | 'error'>('idle')
+
+async function submitContact() {
+  status.value = 'sending'
+  try {
+    await $fetch('/api/contact', { method: 'POST', body: form })
+    status.value = 'sent'
+    form.name = ''
+    form.email = ''
+    form.message = ''
+  } catch {
+    status.value = 'error'
+  }
+}
 </script>
 
 <template>
@@ -31,12 +47,14 @@ const profile = useProfile()
 
     <section id="contact">
       <h2>Contact</h2>
-      <form>
-        <input type="text" name="name" placeholder="Name" />
-        <input type="email" name="email" placeholder="Email" />
-        <textarea name="message" placeholder="Message" rows="4" />
-        <button type="submit">Send</button>
+      <form @submit.prevent="submitContact">
+        <input v-model="form.name" type="text" name="name" placeholder="Name" required />
+        <input v-model="form.email" type="email" name="email" placeholder="Email" required />
+        <textarea v-model="form.message" name="message" placeholder="Message" rows="4" required />
+        <button type="submit" :disabled="status === 'sending'">Send</button>
       </form>
+      <p v-if="status === 'sent'">Thanks, your message has been sent.</p>
+      <p v-if="status === 'error'">Something went wrong, please try again.</p>
     </section>
   </div>
 </template>
