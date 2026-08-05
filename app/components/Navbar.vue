@@ -1,12 +1,15 @@
 <script setup lang="ts">
 const profile = useProfile()
+const { t, locale, locales, setLocale } = useI18n()
 
-const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#contact', label: 'Contact' }
-]
+const navLinks = computed(() => [
+  { href: '#about', label: t('nav.about') },
+  { href: '#projects', label: t('nav.projects') },
+  { href: '#skills', label: t('nav.skills') },
+  { href: '#contact', label: t('nav.contact') }
+])
+
+const availableLocales = computed(() => locales.value)
 
 const isOpen = ref(false)
 
@@ -22,7 +25,7 @@ function closeMenu() {
         <span class="font-bold">{{ profile?.name }}</span>
 
         <!-- Classic navbar: md and up -->
-        <nav class="hidden md:flex gap-4">
+        <nav class="hidden md:flex items-center gap-4">
           <a
             v-for="link in navLinks"
             :key="link.href"
@@ -31,6 +34,15 @@ function closeMenu() {
           >
             {{ link.label }}
           </a>
+          <select
+            :value="locale"
+            class="bg-transparent border border-brand-bg/40 rounded px-2 py-1 text-sm text-brand-bg"
+            @change="setLocale(($event.target as HTMLSelectElement).value as typeof locale)"
+          >
+            <option v-for="loc in availableLocales" :key="loc.code" :value="loc.code" class="text-brand-primary">
+              {{ loc.name }}
+            </option>
+          </select>
         </nav>
 
         <!-- Burger button: below md -->
@@ -38,7 +50,7 @@ function closeMenu() {
           type="button"
           class="md:hidden inline-flex flex-col justify-center gap-1.5 w-8 h-8"
           :aria-expanded="isOpen"
-          aria-label="Toggle navigation menu"
+          :aria-label="t('nav_toggle')"
           @click="isOpen = !isOpen"
         >
           <span
@@ -57,17 +69,28 @@ function closeMenu() {
       </div>
 
       <!-- Mobile menu -->
-      <nav v-if="isOpen" class="md:hidden flex flex-col gap-3 pb-4">
-        <a
-          v-for="link in navLinks"
-          :key="link.href"
-          :href="link.href"
-          class="text-brand-bg/80 hover:text-brand-bg transition-colors"
-          @click="closeMenu"
-        >
-          {{ link.label }}
-        </a>
-      </nav>
+      <Transition
+        enter-active-class="transition-[grid-template-rows] duration-300 ease-out"
+        leave-active-class="transition-[grid-template-rows] duration-200 ease-in"
+        enter-from-class="grid-rows-[0fr]"
+        enter-to-class="grid-rows-[1fr]"
+        leave-from-class="grid-rows-[1fr]"
+        leave-to-class="grid-rows-[0fr]"
+      >
+        <nav v-if="isOpen" class="md:hidden grid overflow-hidden">
+          <div class="flex flex-col gap-3 pb-4 min-h-0">
+            <a
+              v-for="link in navLinks"
+              :key="link.href"
+              :href="link.href"
+              class="text-brand-bg/80 hover:text-brand-bg transition-colors"
+              @click="closeMenu"
+            >
+              {{ link.label }}
+            </a>
+          </div>
+        </nav>
+      </Transition>
     </div>
   </header>
 </template>
