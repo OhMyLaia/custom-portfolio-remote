@@ -21,7 +21,7 @@ function closeMenu() {
   <header class="sticky top-0 z-50 bg-black text-foreground p-6">
     <div class="px-4">
       <div class="flex items-center justify-between py-4">
-        <span class="font-bold">{{ profile?.name }}</span>
+        <a href="#laia" class="font-bold hover:opacity-80 transition-opacity">{{ profile?.name }}</a>
 
         <!-- Classic navbar: md and up -->
         <nav class="hidden md:flex items-center gap-2">
@@ -61,14 +61,14 @@ function closeMenu() {
 
       <!-- Mobile menu -->
       <Transition
-        enter-active-class="transition-[grid-template-rows] duration-300 ease-out"
-        leave-active-class="transition-[grid-template-rows] duration-200 ease-in"
+        enter-active-class="transition-[grid-template-rows] duration-300 ease-out overflow-hidden"
+        leave-active-class="transition-[grid-template-rows] duration-200 ease-in overflow-hidden"
         enter-from-class="grid-rows-[0fr]"
         enter-to-class="grid-rows-[1fr]"
         leave-from-class="grid-rows-[1fr]"
         leave-to-class="grid-rows-[0fr]"
       >
-        <nav v-if="isOpen" class="md:hidden grid overflow-hidden">
+        <nav v-if="isOpen" class="md:hidden grid">
           <div class="flex flex-col gap-3 pb-4 min-h-0">
             <a
               v-for="link in navLinks"
