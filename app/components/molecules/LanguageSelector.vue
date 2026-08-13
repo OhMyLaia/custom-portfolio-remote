@@ -13,7 +13,7 @@ const availableLocales = computed(() => locales.value)
 <template>
   <div class="relative inline-flex items-center">
     <svg
-      class="pointer-events-none absolute left-2.5 h-4 w-4 text-brand-cream/70"
+      class="pointer-events-none absolute left-2.5 h-4 w-4 text-alice-blue/70"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -26,7 +26,7 @@ const availableLocales = computed(() => locales.value)
 
     <select
       :value="locale"
-      class="appearance-none rounded-full border border-brand-cream/30 bg-transparent py-1.5 pl-8 pr-7 text-sm font-semibold text-brand-cream transition-colors hover:border-ocean-mist hover:text-ocean-mist focus:outline-none focus:border-ocean-mist"
+      class="appearance-none rounded-full border border-alice-blue bg-transparent py-1.5 pl-8 pr-7 text-sm font-semibold text-alice-blue transition-colors hover:border-ocean-mist hover:text-ocean-mist focus:outline-none focus:border-ocean-mist"
       @change="setLocale(($event.target as HTMLSelectElement).value as typeof locale)"
     >
       <option v-for="loc in availableLocales" :key="loc.code" :value="loc.code" class="text-brand-primary">
@@ -35,7 +35,7 @@ const availableLocales = computed(() => locales.value)
     </select>
 
     <svg
-      class="pointer-events-none absolute right-2.5 h-3 w-3 text-brand-cream/70"
+      class="pointer-events-none absolute right-2.5 h-3 w-3 text-alice-blue/70"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"

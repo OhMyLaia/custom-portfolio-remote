@@ -33,7 +33,7 @@ function closeMenu() {
           >
             {{ link.label }}
           </a>
-          <LocaleSwitcher />
+          <LanguageSelector />
         </nav>
 
         <!-- Burger button: below md -->
@@ -79,7 +79,7 @@ function closeMenu() {
             >
               {{ link.label }}
             </a>
-            <LocaleSwitcher class="self-start" />
+            <LanguageSelector class="self-start" />
           </div>
         </nav>
       </Transition>
