@@ -18,7 +18,13 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
 <template>
   <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] text-foreground bg-black">
     <div class="h-40 sm:h-auto bg-ink">
-      <img v-if="entry.image" :src="entry.image" :alt="entry.company" class="h-full w-full object-cover" />
+      <img
+        v-if="entry.image"
+        :src="entry.image"
+        :alt="entry.company"
+        class="h-full w-full object-cover"
+        :style="{ objectPosition: entry.imagePosition }"
+      />
     </div>
     <div class="p-6">
       <component
