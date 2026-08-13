@@ -16,26 +16,26 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
 </script>
 
 <template>
-  <div class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 rounded-lg border border-brand-primary/10 bg-brand-primary/5 p-6">
-    <span class="text-sm text-brand-text/50 whitespace-nowrap">{{ entry.dateRange }}</span>
+  <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] items-start gap-x-6 gap-y-2 text-alice-blue bg-black p-6">
+    <span class="text-sm text-alice-blue whitespace-nowrap">{{ entry.dateRange }}</span>
     <div>
       <component
         :is="entry.companyUrl ? 'a' : 'span'"
         :href="entry.companyUrl"
         :target="entry.companyUrl ? '_blank' : undefined"
         :rel="entry.companyUrl ? 'noopener' : undefined"
-        class="inline-flex items-center gap-1 font-semibold text-brand-accent"
-        :class="{ 'hover:underline': entry.companyUrl }"
+        class="inline-flex items-center gap-1 text-ocean-mist"
+        :class="{ 'underline': entry.companyUrl }"
       >
         {{ entry.title }} &middot; {{ entry.company }}
         <span v-if="entry.companyUrl" aria-hidden="true">&#8599;</span>
       </component>
 
-      <ul v-if="entry.previousRoles?.length" class="mt-1 text-brand-text/50">
+      <ul v-if="entry.previousRoles?.length" class="mt-1">
         <li v-for="role in entry.previousRoles" :key="role">{{ role }}</li>
       </ul>
 
-      <p class="mt-3 text-brand-text/80">{{ entry.description }}</p>
+      <p class="mt-3 text-alice-blue">{{ entry.description }}</p>
 
       <ul class="mt-4 flex flex-wrap gap-2">
         <li v-for="tag in entry.tags" :key="tag">
