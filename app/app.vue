@@ -21,7 +21,7 @@ useHead({
 </script>
 
 <template>
-  <div class="min-h-screen bg-brand-cream text-brand-text">
+  <div class="min-h-screen bg-alice-blue text-alice-blue">
     <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
