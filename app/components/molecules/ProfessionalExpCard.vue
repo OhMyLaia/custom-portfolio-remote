@@ -1,13 +1,5 @@
 <script setup lang="ts">
-interface ExperienceEntry {
-  dateRange: string
-  title: string
-  company: string
-  companyUrl?: string
-  previousRoles?: string[]
-  description: string
-  tags: string[]
-}
+import type { ExperienceEntry } from '~/data/experience'
 
 withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
   entry: () => ({
@@ -46,12 +38,8 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
       <p class="mt-3 text-brand-text/80">{{ entry.description }}</p>
 
       <ul class="mt-4 flex flex-wrap gap-2">
-        <li
-          v-for="tag in entry.tags"
-          :key="tag"
-          class="rounded-full bg-brand-accent/10 px-3 py-1 text-sm text-brand-accent"
-        >
-          {{ tag }}
+        <li v-for="tag in entry.tags" :key="tag">
+          <Chip :label="tag" />
         </li>
       </ul>
     </div>

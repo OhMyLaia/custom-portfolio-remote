@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/i18n'],
   css: ['~/assets/css/main.css'],
+  components: [
+    { path: '~/components/atoms', pathPrefix: false },
+    { path: '~/components/molecules', pathPrefix: false },
+    { path: '~/components/organisms', pathPrefix: false }
+  ],
   runtimeConfig: {
     resendApiKey: '',
     resendFromEmail: 'onboarding@resend.dev'
