@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const profile = useProfile()
-const { t, locale, locales, setLocale } = useI18n()
+const { t } = useI18n()
 
 const navLinks = computed(() => [
   { href: '#about', label: t('nav.about') },
@@ -9,8 +9,6 @@ const navLinks = computed(() => [
   { href: '#press', label: t('nav.press') },
   { href: '#contact', label: t('nav.contact') }
 ])
-
-const availableLocales = computed(() => locales.value)
 
 const isOpen = ref(false)
 
@@ -35,15 +33,7 @@ function closeMenu() {
           >
             {{ link.label }}
           </a>
-          <select
-            :value="locale"
-            class="bg-transparent border border-brand-cream/40 rounded px-2 py-1 text-sm text-brand-cream"
-            @change="setLocale(($event.target as HTMLSelectElement).value as typeof locale)"
-          >
-            <option v-for="loc in availableLocales" :key="loc.code" :value="loc.code" class="text-brand-primary">
-              {{ loc.name }}
-            </option>
-          </select>
+          <LocaleSwitcher />
         </nav>
 
         <!-- Burger button: below md -->
@@ -89,15 +79,7 @@ function closeMenu() {
             >
               {{ link.label }}
             </a>
-            <select
-              :value="locale"
-              class="bg-transparent border border-brand-cream/40 rounded px-2 py-1 text-sm text-brand-cream self-start"
-              @change="setLocale(($event.target as HTMLSelectElement).value as typeof locale)"
-            >
-              <option v-for="loc in availableLocales" :key="loc.code" :value="loc.code" class="text-brand-primary">
-                {{ loc.name }}
-              </option>
-            </select>
+            <LocaleSwitcher class="self-start" />
           </div>
         </nav>
       </Transition>
