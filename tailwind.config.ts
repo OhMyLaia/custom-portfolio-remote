@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 function withOpacity(variable: string) {
   return ({ opacityValue }: { opacityValue?: string }) =>
@@ -10,6 +11,9 @@ function withOpacity(variable: string) {
 export default <Partial<Config>>{
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Lato', ...defaultTheme.fontFamily.sans]
+      },
       colors: {
         brand: {
           primary: withOpacity('--color-brand-primary'),
@@ -18,10 +22,10 @@ export default <Partial<Config>>{
           cream: withOpacity('--color-brand-cream'),
           text: withOpacity('--color-brand-text')
         },
-        'ocean-mist': withOpacity('--color-ocean-mist'),
-        'coffee-bean': withOpacity('--color-coffee-bean'),
-        'alice-blue': withOpacity('--color-alice-blue'),
-        'dark-teal': withOpacity('--color-dark-teal')
+        accent: withOpacity('--color-accent'),
+        ink: withOpacity('--color-ink'),
+        foreground: withOpacity('--color-foreground'),
+        surface: withOpacity('--color-surface')
       }
     }
   }

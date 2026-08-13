@@ -16,7 +16,7 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] text-foreground bg-black">
+  <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] bg-surface">
     <div class="h-40 sm:h-auto bg-ink">
       <img v-if="entry.image" :src="entry.image" :alt="entry.company" class="h-full w-full object-cover" />
     </div>
@@ -43,7 +43,8 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
 
       <ul class="mt-4 flex flex-wrap gap-2">
         <li v-for="tag in entry.tags" :key="tag">
-          <Chip :label="tag" />
+          <Chip :label="tag"
+          color="foreground"/>
         </li>
       </ul>
     </div>

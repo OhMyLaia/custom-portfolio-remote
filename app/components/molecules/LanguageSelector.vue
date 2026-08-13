@@ -36,7 +36,7 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
   <div ref="root" class="relative inline-block text-left">
     <button
       type="button"
-      class="inline-flex items-center gap-2 rounded-full border border-brand-cream/30 py-1.5 pl-3 pr-3 text-sm font-semibold text-brand-cream transition-colors hover:border-ocean-mist hover:text-ocean-mist"
+      class="inline-flex items-center gap-2 rounded-full border border-brand-cream/30 py-1.5 pl-3 pr-3 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent"
       aria-haspopup="listbox"
       :aria-expanded="isOpen"
       @click="toggle"
@@ -75,8 +75,8 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
         <li v-for="loc in availableLocales" :key="loc.code" role="option" :aria-selected="loc.code === locale">
           <button
             type="button"
-            class="flex w-full items-center justify-between gap-4 px-4 py-2 text-sm text-brand-cream transition-colors hover:bg-ocean-mist hover:text-black"
-            :class="{ 'text-ocean-mist': loc.code === locale }"
+            class="flex w-full items-center justify-between gap-4 px-4 py-2 text-sm text-brand-cream transition-colors hover:bg-accent hover:text-black"
+            :class="{ 'text-accent': loc.code === locale }"
             @click="select(loc.code)"
           >
             {{ localeAbbreviations[loc.code] ?? loc.code.toUpperCase() }}

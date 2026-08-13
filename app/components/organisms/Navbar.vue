@@ -18,7 +18,7 @@ function closeMenu() {
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 bg-black text-alice-blue p-6">
+  <header class="sticky top-0 z-50 bg-black text-foreground p-6">
     <div class="px-4">
       <div class="flex items-center justify-between py-4">
         <span class="font-bold">{{ profile?.name }}</span>
@@ -29,7 +29,7 @@ function closeMenu() {
             v-for="link in navLinks"
             :key="link.href"
             :href="link.href"
-            class="text-alice-blue py-2 px-3 hover:bg-alice-blue hover:text-black transition-colors"
+            class="text-foreground py-2 px-3 hover:bg-foreground hover:text-black transition-colors"
           >
             {{ link.label }}
           </a>
