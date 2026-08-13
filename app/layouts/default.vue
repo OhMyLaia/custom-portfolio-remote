@@ -11,7 +11,7 @@ const socialLinks = computed(() => {
   <div>
     <Navbar />
 
-    <main class="max-w-2xl mx-auto px-4 flex flex-col gap-10 py-6">
+    <main class="max-w-2xl mx-auto px-4 flex flex-col gap-10 pb-6 pt-0 md:pt-6">
       <slot />
     </main>
 
