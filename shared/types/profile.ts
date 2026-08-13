@@ -15,7 +15,7 @@ export interface ProfileColors {
   primary: string
   secondary: string
   accent: string
-  bg: string
+  cream: string
   text: string
 }
 

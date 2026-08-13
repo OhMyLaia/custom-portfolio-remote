@@ -8,9 +8,13 @@ export default <Partial<Config>>{
           primary: 'var(--color-brand-primary)',
           secondary: 'var(--color-brand-secondary)',
           accent: 'var(--color-brand-accent)',
-          bg: 'var(--color-brand-bg)',
+          cream: 'var(--color-brand-cream)',
           text: 'var(--color-brand-text)'
-        }
+        },
+        'ocean-mist': 'var(--color-ocean-mist)',
+        'coffee-bean': 'var(--color-coffee-bean)',
+        'alice-blue': 'var(--color-alice-blue)',
+        'dark-teal': 'var(--color-dark-teal)'
       }
     }
   }

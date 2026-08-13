@@ -11,7 +11,7 @@ useHead({
   --color-brand-primary: ${colors.primary};
   --color-brand-secondary: ${colors.secondary};
   --color-brand-accent: ${colors.accent};
-  --color-brand-bg: ${colors.bg};
+  --color-brand-cream: ${colors.cream};
   --color-brand-text: ${colors.text};
 }`
       })
@@ -21,7 +21,7 @@ useHead({
 </script>
 
 <template>
-  <div class="min-h-screen bg-brand-bg text-brand-text">
+  <div class="min-h-screen bg-brand-cream text-brand-text">
     <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
