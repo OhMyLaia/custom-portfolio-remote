@@ -88,6 +88,15 @@ function closeMenu() {
             >
               {{ link.label }}
             </a>
+            <select
+              :value="locale"
+              class="bg-transparent border border-brand-bg/40 rounded px-2 py-1 text-sm text-brand-bg self-start"
+              @change="setLocale(($event.target as HTMLSelectElement).value as typeof locale)"
+            >
+              <option v-for="loc in availableLocales" :key="loc.code" :value="loc.code" class="text-brand-primary">
+                {{ loc.name }}
+              </option>
+            </select>
           </div>
         </nav>
       </Transition>

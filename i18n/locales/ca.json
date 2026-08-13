@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "about": "Sobre mi",
+    "projects": "Projectes",
+    "skills": "Habilitats",
+    "contact": "Contacte"
+  },
+  "nav_toggle": "Obrir el menú de navegació",
+  "home": {
+    "description": "Dissenyadora i desenvolupadora creant experiències digitals cuidades al detall."
+  },
+  "sections": {
+    "experience": "Experiència",
+    "projects": "Projectes",
+    "skills": "Habilitats",
+    "contact": "Contacte"
+  },
+  "projects": {
+    "empty": "Encara no hi ha projectes."
+  },
+  "skills": {
+    "empty": "Encara no hi ha habilitats."
+  },
+  "contact": {
+    "name": "Nom",
+    "email": "Correu electrònic",
+    "message": "Missatge",
+    "send": "Enviar",
+    "sending": "Enviant…",
+    "success": "Gràcies, el teu missatge s'ha enviat.",
+    "error": "Alguna cosa ha anat malament, torna-ho a provar."
+  }
+}

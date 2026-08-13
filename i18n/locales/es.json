@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "nav_toggle": "Abrir menú de navegación",
+  "home": {
+    "description": "Diseñadora y desarrolladora creando experiencias digitales cuidadas al detalle."
+  },
+  "sections": {
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "projects": {
+    "empty": "Todavía no hay proyectos."
+  },
+  "skills": {
+    "empty": "Todavía no hay habilidades."
+  },
+  "contact": {
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "sending": "Enviando…",
+    "success": "Gracias, tu mensaje ha sido enviado.",
+    "error": "Algo salió mal, inténtalo de nuevo."
+  }
+}

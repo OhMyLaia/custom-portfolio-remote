@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "nav_toggle": "Toggle navigation menu",
+  "home": {
+    "description": "Designer and developer crafting thoughtful, detail-obsessed digital experiences."
+  },
+  "sections": {
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "projects": {
+    "empty": "No projects yet."
+  },
+  "skills": {
+    "empty": "No skills listed yet."
+  },
+  "contact": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending…",
+    "success": "Thanks, your message has been sent.",
+    "error": "Something went wrong, please try again."
+  }
+}
