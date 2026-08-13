@@ -5,7 +5,8 @@ const { t, locale, locales, setLocale } = useI18n()
 const navLinks = computed(() => [
   { href: '#about', label: t('nav.about') },
   { href: '#projects', label: t('nav.projects') },
-  { href: '#skills', label: t('nav.skills') },
+  { href: '#experience', label: t('nav.experience') },
+  { href: '#press', label: t('nav.press') },
   { href: '#contact', label: t('nav.contact') }
 ])
 
@@ -19,18 +20,18 @@ function closeMenu() {
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 border-b border-brand-cream/10 bg-brand-primary text-brand-cream">
+  <header class="sticky top-0 z-50 bg-black text-alice-blue p-6">
     <div class="px-4">
       <div class="flex items-center justify-between py-4">
         <span class="font-bold">{{ profile?.name }}</span>
 
         <!-- Classic navbar: md and up -->
-        <nav class="hidden md:flex items-center gap-4">
+        <nav class="hidden md:flex items-center gap-2">
           <a
             v-for="link in navLinks"
             :key="link.href"
             :href="link.href"
-            class="text-brand-cream/80 hover:text-brand-cream transition-colors"
+            class="text-alice-blue py-2 px-3 hover:bg-alice-blue hover:text-black transition-colors"
           >
             {{ link.label }}
           </a>
