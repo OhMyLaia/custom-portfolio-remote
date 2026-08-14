@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ExperienceEntry } from '~/data/experience'
 
-withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
+const props = withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
   entry: () => ({
     dateRange: '2018 — 2024',
     title: 'Lead Engineer',
@@ -16,9 +16,9 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] bg-surface">
+  <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] bg-brand-text/90 rounded-2xl shadow-xl shadow-black/15 sm:rounded-none sm:shadow-none md:rounded-lg overflow-hidden">
     <div class="h-40 sm:h-auto bg-ink">
-      <img v-if="entry.image" :src="entry.image" :alt="entry.company" class="h-full w-full object-cover" />
+      <img v-if="entry.image" :src="entry.image" :alt="entry.company" class="card-image h-full w-full object-cover" />
     </div>
     <div class="p-6">
       <component
@@ -26,7 +26,7 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
         :href="entry.companyUrl"
         :target="entry.companyUrl ? '_blank' : undefined"
         :rel="entry.companyUrl ? 'noopener' : undefined"
-        class="inline-flex items-center gap-1 text-accent"
+        class="inline-flex items-center gap-1 text-brand-cream"
         :class="{ 'underline': entry.companyUrl }"
       >
         {{ entry.title }} &middot; {{ entry.company }}
@@ -50,3 +50,15 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
     </div>
   </div>
 </template>
+
+<style scoped>
+.card-image {
+  object-position: top;
+}
+
+@media (min-width: 640px) {
+  .card-image {
+    object-position: v-bind('props.entry.imagePosition ?? "center"');
+  }
+}
+</style>

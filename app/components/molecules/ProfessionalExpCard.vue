@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ExperienceEntry } from '~/data/experience'
 
-withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
+const props = withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
   entry: () => ({
     dateRange: '2018 — 2024',
     title: 'Lead Engineer',
@@ -16,17 +16,16 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] text-foreground bg-black">
-    <div class="h-40 sm:h-auto bg-ink">
+  <div class="grid grid-cols-1 sm:grid-cols-[10rem_1fr] sm:h-72 text-foreground bg-black rounded-xl shadow-xl shadow-black/15 sm:rounded-none sm:shadow-none md:rounded-lg overflow-hidden">
+    <div class="h-40 sm:h-full bg-ink">
       <img
         v-if="entry.image"
         :src="entry.image"
         :alt="entry.company"
-        class="h-full w-full object-cover"
-        :style="{ objectPosition: entry.imagePosition }"
+        class="card-image h-full w-full object-cover"
       />
     </div>
-    <div class="p-6">
+    <div class="p-6 overflow-hidden">
       <component
         :is="entry.companyUrl ? 'a' : 'span'"
         :href="entry.companyUrl"
@@ -45,7 +44,7 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
         <li v-for="role in entry.previousRoles" :key="role">{{ role }}</li>
       </ul>
 
-      <p class="mt-3 text-foreground">{{ entry.description }}</p>
+      <p class="mt-3 text-foreground line-clamp-2">{{ entry.description }}</p>
 
       <ul class="mt-4 flex flex-wrap gap-2">
         <li v-for="tag in entry.tags" :key="tag">
@@ -55,3 +54,15 @@ withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
     </div>
   </div>
 </template>
+
+<style scoped>
+.card-image {
+  object-position: top;
+}
+
+@media (min-width: 640px) {
+  .card-image {
+    object-position: v-bind('props.entry.imagePosition ?? "center"');
+  }
+}
+</style>
