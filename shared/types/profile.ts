@@ -26,6 +26,11 @@ export interface ProfileSocial {
   instagram?: string
 }
 
+export interface ProfileCv {
+  es?: string
+  en?: string
+}
+
 export interface Profile {
   id: string
   name: string
@@ -36,4 +41,5 @@ export interface Profile {
   colors: ProfileColors
   contactEmail: string
   social: ProfileSocial
+  cv?: ProfileCv
 }

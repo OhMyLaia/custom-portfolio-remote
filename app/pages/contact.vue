@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const profile = useProfile()
 </script>
 
 <template>
@@ -27,9 +28,10 @@ const { t } = useI18n()
       {{ t('contact.note') }}
     </p>
 
-    <div class="flex flex-wrap gap-3">
+    <div v-if="profile?.cv?.es || profile?.cv?.en" class="flex flex-wrap gap-3">
       <a
-        href="/cv/laia-martinez-lerma-cv-es.pdf"
+        v-if="profile?.cv?.es"
+        :href="profile.cv.es"
         download
         class="inline-flex items-center gap-2 border border-black/20 text-black/80 px-5 py-2.5 rounded-full text-sm font-semibold uppercase tracking-wider transition-colors hover:border-accent hover:text-accent"
       >
@@ -41,7 +43,8 @@ const { t } = useI18n()
         {{ t('contact.downloadCvEs') }}
       </a>
       <a
-        href="/cv/laia-martinez-lerma-cv-en.pdf"
+        v-if="profile?.cv?.en"
+        :href="profile.cv.en"
         download
         class="inline-flex items-center gap-2 border border-black/20 text-black/80 px-5 py-2.5 rounded-full text-sm font-semibold uppercase tracking-wider transition-colors hover:border-accent hover:text-accent"
       >
