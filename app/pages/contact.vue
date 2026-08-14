@@ -26,5 +26,32 @@ const { t } = useI18n()
     <p class="max-w-2xl border-l-4 border-accent pl-4 whitespace-pre-line italic text-black/70 text-pretty">
       {{ t('contact.note') }}
     </p>
+
+    <div class="flex flex-wrap gap-3">
+      <a
+        href="/cv/laia-martinez-lerma-cv-es.pdf"
+        download
+        class="inline-flex items-center gap-2 border border-black/20 text-black/80 px-5 py-2.5 rounded-full text-sm font-semibold uppercase tracking-wider transition-colors hover:border-accent hover:text-accent"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v12" />
+          <path d="M7 10l5 5 5-5" />
+          <path d="M5 21h14" />
+        </svg>
+        {{ t('contact.downloadCvEs') }}
+      </a>
+      <a
+        href="/cv/laia-martinez-lerma-cv-en.pdf"
+        download
+        class="inline-flex items-center gap-2 border border-black/20 text-black/80 px-5 py-2.5 rounded-full text-sm font-semibold uppercase tracking-wider transition-colors hover:border-accent hover:text-accent"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v12" />
+          <path d="M7 10l5 5 5-5" />
+          <path d="M5 21h14" />
+        </svg>
+        {{ t('contact.downloadCvEn') }}
+      </a>
+    </div>
   </section>
 </template>

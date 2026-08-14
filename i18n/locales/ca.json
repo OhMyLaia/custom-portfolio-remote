@@ -30,8 +30,11 @@
     "sending": "Enviant…",
     "success": "Gràcies, el teu missatge s'ha enviat.",
     "error": "Alguna cosa ha anat malament, torna-ho a provar.",
-    "note": "Hello world! Per a ofertes de feina, col·laboracions o consultes generals, utilitza el formulari de dalt, et respondré tan aviat com pugui. També pots escriure'm si vols rebre el meu CV.",
-    "kicker": "Parlem-ne",
-    "findMe": "Troba'm a"
+    "note": "Hello world! Per a ofertes de feina, col·laboracions o consultes generals, utilitza el formulari de dalt, respondré tan aviat com pugui. També us podeu posar en contacte per rebre el meu CV complet.",
+    "kicker": "Posa't en",
+    "findMe": "Troba'm a",
+    "downloadCv": "Descarrega el CV",
+    "downloadCvEs": "Descarrega el CV (ES)",
+    "downloadCvEn": "Descarrega el CV (EN)"
   }
 }
