@@ -16,7 +16,7 @@ function toggle() {
 
 <template>
   <div
-    class="flip-card-outer relative aspect-[4/5] cursor-pointer"
+    class="flip-card-outer relative aspect-[4/5] lg:aspect-auto lg:h-full cursor-pointer"
     tabindex="0"
     role="button"
     :aria-expanded="isActive"
@@ -35,12 +35,12 @@ function toggle() {
         />
         <div
           v-else
-          class="absolute inset-0 bg-gradient-to-br from-brand-primary via-brand-secondary/60 to-brand-text"
+          class="absolute inset-0 bg-black"
           aria-hidden="true"
         />
       </div>
 
-      <div class="flip-card-face flip-card-back absolute inset-0 flex items-center overflow-y-auto bg-brand-text p-4 sm:p-5">
+      <div class="flip-card-face flip-card-back absolute inset-0 flex items-center overflow-y-auto bg-black p-4 sm:p-5">
         <p class="text-sm leading-relaxed text-foreground">
           {{ text }}
         </p>
@@ -59,10 +59,6 @@ function toggle() {
   transform-style: preserve-3d;
 }
 
-.flip-card-inner.is-active {
-  transform: rotateY(180deg);
-}
-
 .flip-card-face {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -70,6 +66,21 @@ function toggle() {
 
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+/* Mobile & tablet: flip is click/tap-toggled */
+@media (max-width: 1023.98px) {
+  .flip-card-inner.is-active {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Desktop: flip on hover (and keyboard focus) instead of click */
+@media (min-width: 1024px) {
+  .flip-card-outer:hover .flip-card-inner,
+  .flip-card-outer:focus-visible .flip-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

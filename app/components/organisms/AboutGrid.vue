@@ -12,8 +12,8 @@ const chapters = computed(() => {
 
 <template>
   <p v-if="chapters.length === 0" class="text-black/60">{{ t('about.empty') }}</p>
-  <div v-else class="relative left-1/2 right-1/2 -mx-[50vw] w-screen px-2">
-    <div class="grid grid-cols-1 gap-2 sm:grid-cols-5">
+  <div v-else class="relative left-1/2 right-1/2 -mx-[50vw] w-screen px-2 lg:flex lg:flex-1 lg:flex-col lg:min-h-0">
+    <div class="grid grid-cols-1 gap-2 sm:grid-cols-5 lg:flex-1 lg:min-h-0 lg:grid-rows-2">
       <FlipImageCard
         v-for="chapter in chapters"
         :key="chapter.title"
