@@ -29,6 +29,9 @@
     "send": "Enviar",
     "sending": "Enviant…",
     "success": "Gràcies, el teu missatge s'ha enviat.",
-    "error": "Alguna cosa ha anat malament, torna-ho a provar."
+    "error": "Alguna cosa ha anat malament, torna-ho a provar.",
+    "note": "Hello world! Per a ofertes de feina, col·laboracions o consultes generals, utilitza el formulari de dalt, et respondré tan aviat com pugui. També pots escriure'm si vols rebre el meu CV.",
+    "kicker": "Parlem-ne",
+    "findMe": "Troba'm a"
   }
 }

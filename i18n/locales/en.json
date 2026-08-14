@@ -29,6 +29,9 @@
     "send": "Send",
     "sending": "Sending…",
     "success": "Thanks, your message has been sent.",
-    "error": "Something went wrong, please try again."
+    "error": "Something went wrong, please try again.",
+    "note": "Hello world! For job offers, collaborations, or general inquiries, please use the form above, I'll get back to you as soon as possible. Feel free to reach out as well if you'd like a copy of my CV.",
+    "kicker": "Get in touch",
+    "findMe": "Find me online"
   }
 }
