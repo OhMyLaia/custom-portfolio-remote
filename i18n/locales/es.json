@@ -11,10 +11,14 @@
     "description": "Desarrollo de sistemas escalables y diseño de interfaces atractivas para plataformas web y móviles modernas."
   },
   "sections": {
+    "about": "Sobre mí",
     "experience": "Experiencia",
     "projects": "Proyectos",
     "skills": "Habilidades",
     "contact": "Contacto"
+  },
+  "about": {
+    "empty": "Todavía no hay contenido."
   },
   "experience": {
     "empty": "Todavía no hay experiencia."

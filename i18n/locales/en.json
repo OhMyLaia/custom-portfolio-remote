@@ -11,10 +11,14 @@
     "description": "Engineering scalable systems and designing engaging interfaces for modern web and mobile platforms."
   },
   "sections": {
+    "about": "About",
     "experience": "Experience",
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact"
+  },
+  "about": {
+    "empty": "No content yet."
   },
   "experience": {
     "empty": "No experience yet."

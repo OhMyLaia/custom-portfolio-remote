@@ -1,0 +1,26 @@
+<script setup lang="ts">
+import { aboutByProfile } from '~/data/about'
+
+const { locale, t } = useI18n()
+const profile = useProfile()
+
+const chapters = computed(() => {
+  const byLocale = aboutByProfile[profile.value?.id ?? 'laia'] ?? aboutByProfile.laia!
+  return byLocale[locale.value] ?? byLocale.en! ?? []
+})
+</script>
+
+<template>
+  <p v-if="chapters.length === 0" class="text-black/60">{{ t('about.empty') }}</p>
+  <div v-else class="relative left-1/2 right-1/2 -mx-[50vw] w-screen px-2">
+    <div class="grid grid-cols-1 gap-2 sm:grid-cols-5">
+      <FlipImageCard
+        v-for="chapter in chapters"
+        :key="chapter.title"
+        :title="chapter.title"
+        :text="chapter.text"
+        :image="chapter.image"
+      />
+    </div>
+  </div>
+</template>
