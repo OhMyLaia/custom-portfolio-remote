@@ -7,7 +7,7 @@ const navLinks = computed(() => [
   { href: '/projects', label: t('nav.projects') },
   { href: '/experience', label: t('nav.experience') },
   { href: '#press', label: t('nav.press') },
-  { href: '#contact', label: t('nav.contact') }
+  { href: '/contact', label: t('nav.contact') }
 ])
 
 const isOpen = ref(false)
@@ -18,10 +18,10 @@ function closeMenu() {
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 bg-black text-foreground p-6">
+  <header class="sticky top-0 z-50 bg-black text-foreground md:p-6">
     <div class="px-4">
       <div class="flex items-center justify-between py-4">
-        <a href="#laia" class="font-bold hover:opacity-80 transition-opacity">{{ profile?.name }}</a>
+        <a :href="`/#${profile?.id}`" class="font-bold hover:opacity-80 transition-opacity">{{ profile?.name }}</a>
 
         <!-- Classic navbar: md and up -->
         <nav class="hidden md:flex items-center gap-2">
@@ -45,15 +45,15 @@ function closeMenu() {
           @click="isOpen = !isOpen"
         >
           <span
-            class="block h-0.5 w-6 bg-brand-cream transition-transform"
+            class="block h-0.5 w-6 bg-foreground transition-transform"
             :class="isOpen ? 'translate-y-2 rotate-45' : ''"
           />
           <span
-            class="block h-0.5 w-6 bg-brand-cream transition-opacity"
+            class="block h-0.5 w-6 bg-foreground transition-opacity"
             :class="isOpen ? 'opacity-0' : 'opacity-100'"
           />
           <span
-            class="block h-0.5 w-6 bg-brand-cream transition-transform"
+            class="block h-0.5 w-6 bg-foreground transition-transform"
             :class="isOpen ? '-translate-y-2 -rotate-45' : ''"
           />
         </button>
@@ -74,7 +74,7 @@ function closeMenu() {
               v-for="link in navLinks"
               :key="link.href"
               :href="link.href"
-              class="text-brand-cream/80 hover:text-brand-cream transition-colors"
+              class="text-foreground hover:text-foreground transition-colors"
               @click="closeMenu"
             >
               {{ link.label }}
