@@ -2,12 +2,13 @@
   "nav": {
     "about": "Sobre mi",
     "projects": "Projectes",
-    "skills": "Habilitats",
+    "experience": "Experiència",
+    "press": "Premsa",
     "contact": "Contacte"
   },
   "nav_toggle": "Obrir el menú de navegació",
   "home": {
-    "description": "Dissenyadora i desenvolupadora creant experiències digitals cuidades al detall."
+    "description": "Desenvolupament de sistemes escalables i disseny d'interfícies atractives per a plataformes web i mòbils modernes."
   },
   "sections": {
     "experience": "Experiència",

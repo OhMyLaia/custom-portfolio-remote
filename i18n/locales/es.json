@@ -2,12 +2,13 @@
   "nav": {
     "about": "Sobre mí",
     "projects": "Proyectos",
-    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "press": "Prensa",
     "contact": "Contacto"
   },
   "nav_toggle": "Abrir menú de navegación",
   "home": {
-    "description": "Diseñadora y desarrolladora creando experiencias digitales cuidadas al detalle."
+    "description": "Desarrollo de sistemas escalables y diseño de interfaces atractivas para plataformas web y móviles modernas."
   },
   "sections": {
     "experience": "Experiencia",

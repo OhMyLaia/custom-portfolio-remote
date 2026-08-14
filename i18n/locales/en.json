@@ -2,12 +2,13 @@
   "nav": {
     "about": "About",
     "projects": "Projects",
-    "skills": "Skills",
+    "experience": "Experience",
+    "press": "Press",
     "contact": "Contact"
   },
   "nav_toggle": "Toggle navigation menu",
   "home": {
-    "description": "Designer and developer crafting thoughtful, detail-obsessed digital experiences."
+    "description": "Engineering scalable systems and designing engaging interfaces for modern web and mobile platforms."
   },
   "sections": {
     "experience": "Experience",
