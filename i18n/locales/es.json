@@ -16,6 +16,9 @@
     "skills": "Habilidades",
     "contact": "Contacto"
   },
+  "experience": {
+    "empty": "Todavía no hay experiencia."
+  },
   "projects": {
     "empty": "Todavía no hay proyectos."
   },
@@ -30,7 +33,7 @@
     "sending": "Enviando…",
     "success": "Gracias, tu mensaje ha sido enviado.",
     "error": "Algo salió mal, inténtalo de nuevo.",
-    "note": "Hello world! Para ofertas de trabajo, colaboraciones o consultas generales, utiliza el formulario de arriba, responderé lo antes posible. También puedes ponerte en contacto si quieres recibir mi CV completo.",
+    "note": "Hello world! Para ofertas de trabajo, colaboraciones o consultas generales, utiliza el formulario de arriba, responderé lo antes posible. También puedes ponerte en contacto si quieres recibir mi CV completo, o descargarlo aquí.",
     "kicker": "Ponte en",
     "findMe": "Encuéntrame en",
     "downloadCv": "Descargar CV",

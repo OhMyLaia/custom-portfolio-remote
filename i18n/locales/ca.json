@@ -16,6 +16,9 @@
     "skills": "Habilitats",
     "contact": "Contacte"
   },
+  "experience": {
+    "empty": "Encara no hi ha experiència."
+  },
   "projects": {
     "empty": "Encara no hi ha projectes."
   },
@@ -30,7 +33,7 @@
     "sending": "Enviant…",
     "success": "Gràcies, el teu missatge s'ha enviat.",
     "error": "Alguna cosa ha anat malament, torna-ho a provar.",
-    "note": "Hello world! Per a ofertes de feina, col·laboracions o consultes generals, utilitza el formulari de dalt, respondré tan aviat com pugui. També us podeu posar en contacte per rebre el meu CV complet.",
+    "note": "Hello world! Per a ofertes de feina, col·laboracions o consultes generals, utilitza el formulari de dalt, respondré tan aviat com pugui. També us podeu posar en contacte per rebre el meu CV complet, o descarregar-lo aquí.",
     "kicker": "Posa't en",
     "findMe": "Troba'm a",
     "downloadCv": "Descarrega el CV",

@@ -10,11 +10,11 @@ export interface ExperienceEntry {
   imagePosition?: string
 }
 
-const vlTags = ['Next.js', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Tailwind', 'Vercel', 'Railway', 'GitHub Actions', 'Playwright', 'Jest', 'Capacitor', 'Firebase', "Git"]
+const vlTags = ['Next.js', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Tailwind', 'Vercel', 'Railway', 'GitHub Actions', 'Playwright', 'Jest', 'Capacitor', 'Firebase', "Git", "Agile"]
 const abroadenTags = ['Vue.js', 'JavaScript', 'Pinia', 'Tailwind', 'REST API', 'Playwright', "Git", "Slack"]
-const cibernariumTags = ['React.js', 'TypeScript', 'Zod', 'Tailwind', 'API', 'Vitest', "Git",, "Scrum"]
+const cibernariumTags = ['React.js', 'TypeScript', 'Zod', 'Tailwind', 'API', 'Vitest', "Git", "Scrum"]
 
-export const experienceByLocale: Record<string, ExperienceEntry[]> = {
+const laiaExperience: Record<string, ExperienceEntry[]> = {
   en: [
     {
       dateRange: '2025 — Present',
@@ -22,7 +22,6 @@ export const experienceByLocale: Record<string, ExperienceEntry[]> = {
       company: 'Vuélvete Local',
       companyUrl: 'https://vuelvetelocal.com',
       image: '/images/laia/vl-card.png',
-      imagePosition: 'left',
       description:
         'Full-scale web and mobile architectural redesign spanning a modular MVC backend, frontend, i18n, marketplace, search engine, and scraping. Led large-scale data migration and polymorphic modeling while maintaining legacy and production environments in parallel.',
       tags: vlTags
@@ -43,7 +42,6 @@ export const experienceByLocale: Record<string, ExperienceEntry[]> = {
       company: 'Cibernàrium',
       companyUrl: 'https://ita-wiki-frontend-production.up.railway.app/',
       image: '/images/laia/cibernarium-card.png',
-      imagePosition: 'left',
       description:
         'Translated Figma designs into high-fidelity, responsive layouts and UI components. Built interactive data visualizations and complex forms in close collaboration with the backend team.',
       tags: cibernariumTags
@@ -56,7 +54,6 @@ export const experienceByLocale: Record<string, ExperienceEntry[]> = {
       company: 'Vuélvete Local',
       companyUrl: 'https://vuelvetelocal.com',
       image: '/images/laia/vl-card.png',
-      imagePosition: 'left',
       description:
         'Rediseño integral de la arquitectura web y mobile: backend MVC modular, frontend, i18n, marketplace, motor de búsqueda y scraping. Migración masiva de datos, modelado polimórfico y mantenimiento simultáneo de los entornos legacy y producción.',
       tags: vlTags
@@ -77,7 +74,6 @@ export const experienceByLocale: Record<string, ExperienceEntry[]> = {
       company: 'Cibernàrium',
       companyUrl: 'https://ita-wiki-frontend-production.up.railway.app/',
       image: '/images/laia/cibernarium-card.png',
-      imagePosition: 'left',
       description:
         'Maquetación y creación de layouts fieles a los diseños de Figma. Visualización de datos y formularios, trabajando en estrecha colaboración con el equipo de backend.',
       tags: cibernariumTags
@@ -90,7 +86,6 @@ export const experienceByLocale: Record<string, ExperienceEntry[]> = {
       company: 'Vuélvete Local',
       companyUrl: 'https://vuelvetelocal.com',
       image: '/images/laia/vl-card.png',
-      imagePosition: 'left',
       description:
         "Redisseny integral de l'arquitectura web i mobile: backend MVC modular, frontend, i18n, marketplace, motor de cerca i scraping. Migració massiva de dades, modelatge polimòrfic i manteniment simultani dels entorns legacy i producció.",
       tags: vlTags
@@ -111,10 +106,14 @@ export const experienceByLocale: Record<string, ExperienceEntry[]> = {
       company: 'Cibernàrium',
       companyUrl: 'https://ita-wiki-frontend-production.up.railway.app/',
       image: '/images/laia/cibernarium-card.png',
-      imagePosition: 'left',
       description:
         'Maquetació i creació de layouts fidels als dissenys de Figma. Visualització de dades i formularis, treballant en estreta col·laboració amb l\'equip de backend.',
       tags: cibernariumTags
     }
   ]
+}
+
+export const experienceByProfile: Record<string, Record<string, ExperienceEntry[]>> = {
+  laia: laiaExperience,
+  gabo: { en: [], es: [], ca: [] }
 }

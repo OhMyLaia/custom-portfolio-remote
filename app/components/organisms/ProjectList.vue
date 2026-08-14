@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { projectsByLocale } from '~/data/projects'
+import { projectsByProfile } from '~/data/projects'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
+const profile = useProfile()
 
-const projects = computed(() => projectsByLocale[locale.value] ?? projectsByLocale.en)
+const projects = computed(() => {
+  const byLocale = projectsByProfile[profile.value?.id ?? 'laia'] ?? projectsByProfile.laia!
+  return byLocale[locale.value] ?? byLocale.en! ?? []
+})
 
 const mounted = ref(false)
 onMounted(() => {
@@ -12,9 +16,11 @@ onMounted(() => {
 </script>
 
 <template>
+  <p v-if="mounted && projects.length === 0" class="text-black/60">{{ t('projects.empty') }}</p>
   <TransitionGroup
+    v-else
     tag="div"
-    class="flex flex-col gap-3"
+    class="flex flex-col gap-6 sm:gap-3"
     enter-active-class="transition duration-500 ease-out"
     enter-from-class="opacity-0 translate-y-6"
     enter-to-class="opacity-100 translate-y-0"
