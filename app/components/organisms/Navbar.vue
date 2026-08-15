@@ -23,12 +23,12 @@ function closeMenu() {
       <div class="flex items-center justify-between py-4">
         <a
           :href="`/#${profile?.id}`"
-          class="relative flex h-10 w-24 items-center hover:text-accent transition-colors"
+          class="relative flex h-8 w-14 md:h-10 md:w-24 items-center hover:text-brand-secondary transition-colors"
           :aria-label="profile?.name"
         >
           <span
             v-if="profile?.logo"
-            class="absolute -left-8 top-1/2 h-32 w-32 -translate-y-1/2 bg-foreground"
+            class="absolute -left-3 top-1/2 h-16 w-16 -translate-y-1/2 bg-current md:-left-8 md:h-32 md:w-32"
             :style="{
               WebkitMaskImage: `url(${profile.logo})`,
               maskImage: `url(${profile.logo})`,
