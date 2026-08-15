@@ -34,6 +34,7 @@ export interface ProfileCv {
 export interface Profile {
   id: string
   name: string
+  logo?: string
   tagline: string
   bio: string
   projects: ProjectItem[]

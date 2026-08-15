@@ -21,7 +21,27 @@ function closeMenu() {
   <header class="sticky top-0 z-50 bg-black text-foreground md:p-6">
     <div class="px-4">
       <div class="flex items-center justify-between py-4">
-        <a :href="`/#${profile?.id}`" class="font-bold hover:opacity-80 transition-opacity">{{ profile?.name }}</a>
+        <a
+          :href="`/#${profile?.id}`"
+          class="relative flex h-10 w-24 items-center hover:text-accent transition-colors"
+          :aria-label="profile?.name"
+        >
+          <span
+            v-if="profile?.logo"
+            class="absolute -left-8 top-1/2 h-32 w-32 -translate-y-1/2 bg-foreground"
+            :style="{
+              WebkitMaskImage: `url(${profile.logo})`,
+              maskImage: `url(${profile.logo})`,
+              WebkitMaskSize: 'contain',
+              maskSize: 'contain',
+              WebkitMaskRepeat: 'no-repeat',
+              maskRepeat: 'no-repeat',
+              WebkitMaskPosition: 'center',
+              maskPosition: 'center'
+            }"
+          />
+          <span v-else class="font-bold">{{ profile?.name }}</span>
+        </a>
 
         <!-- Classic navbar: md and up -->
         <nav class="hidden md:flex items-center gap-2">
