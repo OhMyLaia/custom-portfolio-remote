@@ -41,7 +41,7 @@ function toggle() {
       </div>
 
       <div class="flip-card-face flip-card-back absolute inset-0 flex items-center overflow-y-auto bg-black p-4 sm:p-5">
-        <p class="text-sm leading-relaxed text-foreground">
+        <p class="text-sm sm:text-base leading-relaxed text-foreground">
           {{ text }}
         </p>
       </div>
