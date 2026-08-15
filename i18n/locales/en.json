@@ -15,6 +15,7 @@
     "experience": "Experience",
     "projects": "Projects",
     "skills": "Skills",
+    "press": "Press",
     "contact": "Contact"
   },
   "about": {
@@ -28,6 +29,9 @@
   },
   "skills": {
     "empty": "No skills listed yet."
+  },
+  "press": {
+    "empty": "No press mentions yet."
   },
   "contact": {
     "name": "Name",

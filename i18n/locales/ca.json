@@ -15,6 +15,7 @@
     "experience": "Experiència",
     "projects": "Projectes",
     "skills": "Habilitats",
+    "press": "Premsa",
     "contact": "Contacte"
   },
   "about": {
@@ -28,6 +29,9 @@
   },
   "skills": {
     "empty": "Encara no hi ha habilitats."
+  },
+  "press": {
+    "empty": "Encara no hi ha mencions a premsa."
   },
   "contact": {
     "name": "Nom",
