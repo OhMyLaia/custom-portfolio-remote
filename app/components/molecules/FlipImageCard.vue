@@ -1,10 +1,12 @@
 <script setup lang="ts">
-withDefaults(defineProps<{
+const props = withDefaults(defineProps<{
   title: string
   text: string
   image?: string
+  peekOnMount?: boolean
 }>(), {
-  image: undefined
+  image: undefined,
+  peekOnMount: false
 })
 
 const isActive = ref(false)
@@ -12,6 +14,18 @@ const isActive = ref(false)
 function toggle() {
   isActive.value = !isActive.value
 }
+
+onMounted(() => {
+  if (!props.peekOnMount) return
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+  setTimeout(() => {
+    isActive.value = true
+    setTimeout(() => {
+      isActive.value = false
+    }, 900)
+  }, 600)
+})
 </script>
 
 <template>
