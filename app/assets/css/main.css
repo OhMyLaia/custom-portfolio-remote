@@ -7,6 +7,10 @@
   h2 {
     font-family: 'Major Mono Display', monospace;
   }
+
+  body {
+    @apply bg-black;
+  }
 }
 
 :root {
