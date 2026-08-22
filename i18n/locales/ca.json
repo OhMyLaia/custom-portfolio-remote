@@ -8,7 +8,8 @@
   },
   "nav_toggle": "Obrir el menú de navegació",
   "home": {
-    "description": "Fent fàcil el complex: desenvolupament web i mòbil amb bases sòlides, interfícies cuidades i codi fet per durar ;)"
+    "description": "Fent fàcil el complex: desenvolupament web i mòbil amb codi fet per durar. La teva idea feta realitat ;)",
+    "cta": "Parlem de la teva idea"
   },
   "seo": {
     "home": {
@@ -60,7 +61,7 @@
     "empty": "Encara no hi ha mencions a premsa."
   },
   "footer": {
-    "kicker": "Saluda",
+    "kicker": "Contacta",
     "newJoke": "Explica'n un altre"
   },
   "contact": {

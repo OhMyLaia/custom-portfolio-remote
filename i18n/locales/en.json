@@ -8,7 +8,8 @@
   },
   "nav_toggle": "Toggle navigation menu",
   "home": {
-    "description": "Making the complex easy: web and mobile development with solid foundations, polished interfaces, and code built to last ;)"
+    "description": "Making the complex easy: web and mobile development with solid foundations, polished interfaces, and code built to last ;)",
+    "cta": "Let's talk about your idea"
   },
   "seo": {
     "home": {
@@ -60,7 +61,7 @@
     "empty": "No press mentions yet."
   },
   "footer": {
-    "kicker": "Say hello",
+    "kicker": "Contact",
     "newJoke": "Tell me another one"
   },
   "contact": {
