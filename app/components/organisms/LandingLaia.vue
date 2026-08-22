@@ -18,7 +18,7 @@ const { t } = useI18n()
       </svg>
       <!-- top-right: brand primary (deep plum) -->
       <svg
-        class="blob-float absolute -top-4 -right-20 w-72 h-72 text-brand-primary/80 md:top-4 md:-right-10 md:w-[450px] md:h-[450px] lg:-right-16 lg:w-[550px] lg:h-[550px]"
+        class="blob-float absolute -top-4 -right-20 w-72 h-72 text-brand-primary/70 md:top-4 md:-right-10 md:w-[450px] md:h-[450px] lg:-right-16 lg:w-[550px] lg:h-[550px]"
         viewBox="0 0 200 200"
         fill="currentColor"
       >
@@ -75,7 +75,7 @@ const { t } = useI18n()
         />
       </svg>
       <!-- bottom-center accent: brand primary, subtle -->
-      <svg
+      <!-- <svg
         class="hidden xl:block blob-float-slow absolute bottom-16 left-1/2 -translate-x-1/2 w-40 h-40 text-brand-cream/90"
         viewBox="0 0 200 200"
         fill="currentColor"
@@ -84,12 +84,12 @@ const { t } = useI18n()
           d="M53.2,1.5C53.2,28.2,26.6,56.3,-2,56.3C-30.6,56.3,-61.2,28.2,-61.2,1.5C-61.2,-25.2,-30.6,-50.5,-2,-50.5C26.6,-50.5,53.2,-25.2,53.2,1.5Z"
           transform="translate(100 100)"
         />
-      </svg>
+      </svg> -->
     </div>
 <div class="items-center md:flex-shrink-0">
   <img src="/images/laia/laiaMLerma-logo-lettering.svg" alt="Laia M. Lerma" class="relative w-full max-w-sm mx-auto my-4 md:mx-0 md:max-w-xs lg:max-w-lg" />
 </div>
-    <p class="relative max-w-sm md:max-w-none md:min-w-0 md:flex-1 break-words text-black text-5xl text-start text-pretty mt-5 md:mt-0 md:text-6xl">
+    <p class="relative max-w-sm md:max-w-none md:min-w-0 md:flex-1 md:break-words md:[hyphens:auto] text-black text-5xl text-start text-pretty mt-5 md:mt-0 md:text-6xl">
       {{ t('home.description') }}
     </p>
   </section>

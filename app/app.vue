@@ -1,7 +1,11 @@
 <script setup lang="ts">
 const profile = useProfile()
+const { locale } = useI18n()
 
 useHead({
+  htmlAttrs: {
+    lang: computed(() => locale.value)
+  },
   style: [
     {
       innerHTML: computed(() => {
