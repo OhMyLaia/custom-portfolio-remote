@@ -15,7 +15,7 @@ export const laia: Profile = {
     cream: '#FBF6EF',
     text: '#4D243D'
   },
-  contactEmail: 'laiamlerma@gmail.com',
+  contactEmail: 'hello@ohmylaia.com',
   social: {
     linkedin: 'https://www.linkedin.com/in/laia-martinez-lerma/',
     github: 'https://github.com/OhMyLaia'
