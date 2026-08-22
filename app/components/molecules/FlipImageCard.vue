@@ -41,10 +41,15 @@ onMounted(() => {
   >
     <div class="flip-card-inner absolute inset-0" :class="{ 'is-active': isActive }">
       <div class="flip-card-face flip-card-front absolute inset-0 overflow-hidden bg-foreground">
-        <img
+        <NuxtImg
           v-if="image"
           :src="image"
           :alt="title"
+          width="480"
+          height="600"
+          sizes="100vw sm:50vw lg:20vw"
+          quality="75"
+          loading="lazy"
           class="absolute inset-0 h-full w-full object-cover"
         />
       </div>
