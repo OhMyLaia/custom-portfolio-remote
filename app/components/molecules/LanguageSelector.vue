@@ -70,7 +70,7 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
       <ul
         v-if="isOpen"
         role="listbox"
-        class="absolute right-0 z-10 mt-2 min-w-32 overflow-hidden rounded-xl border border-brand-cream/20 bg-black py-1 shadow-lg"
+        class="absolute left-0 md:left-auto md:right-0 z-10 mt-2 min-w-32 overflow-hidden rounded-xl border border-brand-cream/20 bg-black py-1 shadow-lg"
       >
         <li v-for="loc in availableLocales" :key="loc.code" role="option" :aria-selected="loc.code === locale">
           <button

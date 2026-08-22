@@ -23,5 +23,5 @@ logs
 .env.*
 !.env.example
 
-# Personal profile data (not for public repo)
-content/profiles/*.ts
+# Raw CV source material, not used at build/runtime
+content/scrapping-files/

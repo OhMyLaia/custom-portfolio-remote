@@ -10,14 +10,14 @@
 }
 
 :root {
-  /* --color-brand-primary: #2f1425;
+  --color-brand-primary: #2f1425;
   --color-brand-secondary: #068D9D;
   --color-brand-accent: #068D9D;
   --color-brand-cream: #fbf7f1;
-  --color-brand-text: #4D243D; */
+  --color-brand-text: #4D243D;
 
   --color-accent: #2EB8A6;
   --color-ink: #100007;
-  --color-foreground: #c2d6ff;
+  --color-foreground: #dae6ff;
   --color-surface: #004346;
 }

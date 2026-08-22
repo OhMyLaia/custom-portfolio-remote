@@ -1,0 +1,27 @@
+import type { Profile } from '~~/shared/types/profile'
+
+export const laia: Profile = {
+  id: 'laia',
+  name: 'Laia',
+  logo: '/images/laia/laia-logo.svg',
+  tagline: '',
+  bio: '',
+  projects: [],
+  skills: [],
+  colors: {
+    primary: '#4D243D',
+    secondary: '#068D9D',
+    accent: '#068D9D',
+    cream: '#FBF6EF',
+    text: '#4D243D'
+  },
+  contactEmail: 'laiamlerma@gmail.com',
+  social: {
+    linkedin: 'https://www.linkedin.com/in/laia-martinez-lerma/',
+    github: 'https://github.com/OhMyLaia'
+  },
+  cv: {
+    es: '/cv/laia-martinez-lerma-cv-es.pdf',
+    en: '/cv/laia-martinez-lerma-cv-en.pdf'
+  }
+}

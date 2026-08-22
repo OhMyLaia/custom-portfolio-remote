@@ -16,11 +16,11 @@ const props = withDefaults(defineProps<{ entry?: ExperienceEntry }>(), {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] bg-brand-text/90 rounded-2xl shadow-xl shadow-black/15 sm:rounded-none sm:shadow-none md:rounded-lg overflow-hidden">
+  <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] sm:h-64 bg-brand-text/90 rounded-2xl shadow-xl shadow-black/15 sm:rounded-none sm:shadow-none md:rounded-lg overflow-hidden">
     <div class="h-40 sm:h-auto bg-ink">
       <img v-if="entry.image" :src="entry.image" :alt="entry.company" class="card-image h-full w-full object-cover" />
     </div>
-    <div class="p-6">
+    <div class="p-6 overflow-y-auto">
       <component
         :is="entry.companyUrl ? 'a' : 'span'"
         :href="entry.companyUrl"
