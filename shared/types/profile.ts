@@ -42,6 +42,7 @@ export interface Profile {
   id: string
   name: string
   logo?: string
+  favicon?: string
   tagline: string
   bio: string
   projects: ProjectItem[]

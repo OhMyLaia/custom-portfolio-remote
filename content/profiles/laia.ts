@@ -4,6 +4,7 @@ export const laia: Profile = {
   id: 'laia',
   name: 'Laia',
   logo: '/images/laia/laia-logo.svg',
+  favicon: '/images/laia/favicon-laia.png',
   tagline: '',
   bio: '',
   projects: [],
