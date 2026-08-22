@@ -10,6 +10,32 @@
   "home": {
     "description": "Fent fàcil el complex: desenvolupament web i mòbil amb bases sòlides, interfícies cuidades i codi fet per durar ;)"
   },
+  "seo": {
+    "home": {
+      "title": "{name} — {jobTitle}",
+      "description": "{name} és {jobTitle}. Portfolio, projectes i trajectòria professional: de les Belles Arts a l'arquitectura de programari."
+    },
+    "about": {
+      "title": "Sobre {name} — de les Belles Arts a Tech Lead",
+      "description": "La trajectòria de {name}, {jobTitle}: de les Belles Arts i deu anys d'hostaleria a liderar arquitectura i producte en una startup."
+    },
+    "projects": {
+      "title": "Projectes — {name}",
+      "description": "Una selecció de projectes desenvolupats per {name}, {jobTitle}."
+    },
+    "experience": {
+      "title": "Experiència — {name}",
+      "description": "Experiència professional i trajectòria de {name}, {jobTitle}."
+    },
+    "press": {
+      "title": "Premsa i ponències — {name}",
+      "description": "Aparicions a premsa i ponències de {name}."
+    },
+    "contact": {
+      "title": "Contacta amb {name}",
+      "description": "Posa't en contacte amb {name} per a col·laboracions, ofertes o consultes."
+    }
+  },
   "sections": {
     "about": "Sobre mi",
     "experience": "Experiència",

@@ -10,6 +10,32 @@
   "home": {
     "description": "Haciendo fácil lo complejo: desarrollo web y móvil con bases sólidas, interfaces cuidadas y código hecho para durar ;)"
   },
+  "seo": {
+    "home": {
+      "title": "{name} — {jobTitle}",
+      "description": "{name} es {jobTitle}. Portfolio, proyectos y trayectoria profesional: de las Bellas Artes a la arquitectura de software."
+    },
+    "about": {
+      "title": "Sobre {name} — de las Bellas Artes a Tech Lead",
+      "description": "La trayectoria de {name}, {jobTitle}: de las Bellas Artes y diez años de hostelería a liderar arquitectura y producto en una startup."
+    },
+    "projects": {
+      "title": "Proyectos — {name}",
+      "description": "Una selección de proyectos desarrollados por {name}, {jobTitle}."
+    },
+    "experience": {
+      "title": "Experiencia — {name}",
+      "description": "Experiencia profesional y trayectoria de {name}, {jobTitle}."
+    },
+    "press": {
+      "title": "Prensa y ponencias — {name}",
+      "description": "Apariciones en prensa y ponencias de {name}."
+    },
+    "contact": {
+      "title": "Contacta con {name}",
+      "description": "Ponte en contacto con {name} para colaboraciones, ofertas o consultas."
+    }
+  },
   "sections": {
     "about": "Sobre mí",
     "experience": "Experiencia",

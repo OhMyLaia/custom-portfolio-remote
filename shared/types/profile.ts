@@ -31,6 +31,13 @@ export interface ProfileCv {
   en?: string
 }
 
+export interface ProfileSeo {
+  fullName: string
+  alternateNames?: string[]
+  image?: string
+  jobTitle: Record<string, string>
+}
+
 export interface Profile {
   id: string
   name: string
@@ -43,4 +50,5 @@ export interface Profile {
   contactEmail: string
   social: ProfileSocial
   cv?: ProfileCv
+  seo: ProfileSeo
 }

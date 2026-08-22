@@ -15,5 +15,13 @@ export const gabo: Profile = {
     text: '#111827'
   },
   contactEmail: '',
-  social: {}
+  social: {},
+  seo: {
+    fullName: '',
+    jobTitle: {
+      en: '',
+      es: '',
+      ca: ''
+    }
+  }
 }

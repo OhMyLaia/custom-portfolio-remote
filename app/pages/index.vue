@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const profile = useProfile()
+useSeoHead('home')
 </script>
 
 <template>

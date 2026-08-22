@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const profile = useProfile()
+useSeoHead('contact')
 </script>
 
 <template>
@@ -19,7 +20,7 @@ const profile = useProfile()
 
     <div>
       <p class="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{{ t('contact.kicker') }}</p>
-      <h2 class="text-3xl md:text-5xl text-black">{{ t('sections.contact') }}</h2>
+      <h1 class="text-3xl md:text-5xl text-black">{{ t('sections.contact') }}</h1>
     </div>
 
     <ContactForm />

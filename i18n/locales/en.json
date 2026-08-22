@@ -10,6 +10,32 @@
   "home": {
     "description": "Making the complex easy: web and mobile development with solid foundations, polished interfaces, and code built to last ;)"
   },
+  "seo": {
+    "home": {
+      "title": "{name} — {jobTitle}",
+      "description": "{name} is a {jobTitle}. Portfolio, projects, and career story — from Fine Arts to software architecture."
+    },
+    "about": {
+      "title": "About {name} — from Fine Arts to Tech Lead",
+      "description": "The story of {name}, {jobTitle}: from Fine Arts and ten years in hospitality to leading architecture and product at a startup."
+    },
+    "projects": {
+      "title": "Projects — {name}",
+      "description": "A selection of projects built by {name}, {jobTitle}."
+    },
+    "experience": {
+      "title": "Experience — {name}",
+      "description": "Professional experience and career path of {name}, {jobTitle}."
+    },
+    "press": {
+      "title": "Press & talks — {name}",
+      "description": "Media features and speaking appearances by {name}."
+    },
+    "contact": {
+      "title": "Contact {name}",
+      "description": "Get in touch with {name} for collaborations, roles, or questions."
+    }
+  },
   "sections": {
     "about": "About",
     "experience": "Experience",
