@@ -89,7 +89,7 @@ const { t } = useI18n()
 <div class="items-center md:flex-shrink-0">
   <img src="/images/laia/laiaMLerma-logo-lettering.svg" alt="Laia M. Lerma" class="relative w-full max-w-sm mx-auto my-4 md:mx-0 md:max-w-xs lg:max-w-lg" />
 </div>
-    <p class="relative max-w-sm md:max-w-none md:min-w-0 md:flex-1 md:break-words md:[hyphens:auto] text-black text-5xl text-start text-pretty mt-5 md:mt-0 md:text-6xl">
+    <p class="relative max-w-sm md:max-w-none md:min-w-0 md:flex-1 md:break-words md:[hyphens:auto] text-black text-5xl text-start text-pretty mt-5 md:mt-0 md:text-6xl xl:text-8xl">
       {{ t('home.description') }}
     </p>
   </section>
