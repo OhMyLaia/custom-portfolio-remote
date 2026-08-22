@@ -89,9 +89,17 @@ const { t } = useI18n()
 <h1 class="items-center md:flex-shrink-0">
   <img src="/images/laia/laiaMLerma-logo-lettering.svg" alt="Laia M. Lerma" class="relative w-full max-w-sm mx-auto my-4 md:mx-0 md:max-w-xs lg:max-w-md xl:max-w-lg" />
 </h1>
-    <p class="relative max-w-sm md:max-w-none md:min-w-0 md:flex-1 md:break-words md:[hyphens:auto] lg:break-normal lg:[hyphens:none] text-black text-5xl text-start text-pretty mt-5 md:mt-0 md:text-6xl xl:text-8xl">
-      {{ t('home.description') }}
-    </p>
+    <div class="relative flex flex-col items-center gap-6 max-w-sm md:max-w-none md:min-w-0 md:flex-1 lg:items-start lg:mt-10">
+      <p class="md:break-words md:[hyphens:auto] lg:break-normal lg:[hyphens:none] text-black text-5xl text-start text-pretty mt-5 md:mt-0 md:text-6xl xl:text-8xl">
+        {{ t('home.description') }}
+      </p>
+      <NuxtLink
+        to="/contact"
+        class="flex w-full items-center justify-center gap-2 bg-black text-foreground px-6 py-5 text-2xl font-semibold uppercase tracking-wider transition-all hover:opacity-90 md:py-4 md:text-xl md:hover:pl-8 lg:w-auto lg:mt-10"
+      >
+        {{ t('home.cta') }}
+      </NuxtLink>
+    </div>
   </section>
 </template>
 
