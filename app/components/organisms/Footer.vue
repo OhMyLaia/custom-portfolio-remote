@@ -25,7 +25,7 @@ const { data: joke, pending, refresh } = await useLazyAsyncData(
             <span class="group-hover:underline">{{ profile.contactEmail }}</span>
           </a>
 
-          <div class="flex items-center gap-2 md:min-w-0 md:flex-1">
+          <div class="flex min-w-0 items-center gap-2 md:flex-1">
             <button
               type="button"
               :disabled="pending"
@@ -40,7 +40,7 @@ const { data: joke, pending, refresh } = await useLazyAsyncData(
                 <path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
               </svg>
             </button>
-            <span class="text-sm italic text-foreground/60">
+            <span class="min-w-0 break-words text-sm italic text-foreground/60">
               {{ joke?.joke ?? '…' }}
             </span>
           </div>
