@@ -17,7 +17,7 @@ onMounted(() => {
   <TransitionGroup
     v-else
     tag="div"
-    class="grid grid-cols-1 gap-6 sm:grid-cols-2"
+    class="grid grid-cols-2 gap-3 sm:gap-6"
     enter-active-class="transition duration-700 ease-out"
     enter-from-class="opacity-0 translate-x-12"
     enter-to-class="opacity-100 translate-x-0"
