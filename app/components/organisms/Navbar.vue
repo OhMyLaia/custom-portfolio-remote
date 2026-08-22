@@ -63,7 +63,7 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside))
           >
             {{ link.label }}
           </a>
-          <LanguageSelector />
+          <LanguageSelector class="ml-4" />
         </nav>
 
         <!-- Burger button: below md -->
