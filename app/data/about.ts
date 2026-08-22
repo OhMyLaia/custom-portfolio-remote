@@ -28,7 +28,7 @@ const laiaAbout: Record<string, AboutChapter[]> = {
     },
     {
       title: 'Talent Arena & purpose',
-      text: 'Our premise is clear: we need to save our neighborhoods and make technology an ally, not an enemy, so our cities grow in service of people, not against them. This shift in direction led me to speak at Talent Arena, on the panel "Mujeres, Competencias Digitales i Futuro Laboral: el rol de Barcelona Activa en el empoderamiento tecnológico" (Women, Digital Skills and the Future of Work: Barcelona Activa\'s role in technological empowerment), where I shared my perspective on women in the STEAM ecosystem and the real value of reinventing yourself in this industry.',
+      text: 'Our premise is clear: we need to save our neighborhoods and make technology an ally, not an enemy, so our cities grow in service of people, not against them. This shift in direction led me to speak at Talent Arena, a three-day fair held as part of the Mobile World Congress, on the panel "Mujeres, Competencias Digitales i Futuro Laboral: el rol de Barcelona Activa en el empoderamiento tecnológico" (Women, Digital Skills and the Future of Work: Barcelona Activa\'s role in technological empowerment), where I shared my perspective on women in the STEAM ecosystem and the real value of reinventing yourself in this industry.',
       image: '/images/laia/photo-grid/5.jpg'
     },
     {
@@ -48,7 +48,7 @@ const laiaAbout: Record<string, AboutChapter[]> = {
     },
     {
       title: 'Professional philosophy',
-      text: 'The user is at the center of my professional philosophy — personally, I see technology as the bridge we build to walk toward the future. Today I keep applying the same curiosity from day one, combining technical rigor with visual sensitivity in every challenge I take on.',
+      text: 'The user is at the center of my professional philosophy. Personally, I see technology as the bridge we build to walk toward the future. Today I keep applying the same curiosity from day one, combining technical rigor with visual sensitivity in every challenge I take on.',
       image: '/images/laia/photo-grid/9.jpg'
     },
     {
@@ -80,7 +80,7 @@ const laiaAbout: Record<string, AboutChapter[]> = {
     },
     {
       title: 'Talent Arena y propósito',
-      text: 'Nuestra premisa es clara: necesitamos salvar los barrios y hacer de la tecnología una aliada, y no una enemiga, para que nuestras ciudades crezcan al servicio de las personas, y no en contra. Este cambio de rumbo me llevó a participar como ponente en el Talent Arena, dentro de la mesa "Mujeres, Competencias Digitales i Futuro Laboral: el rol de Barcelona Activa en el empoderamiento tecnológico", donde compartí mi visión sobre la mujer en el ecosistema STEAM y el valor real de reinventarse en esta industria.',
+      text: 'Nuestra premisa es clara: necesitamos salvar los barrios y hacer de la tecnología una aliada, y no una enemiga, para que nuestras ciudades crezcan al servicio de las personas, y no en contra. Este cambio de rumbo me llevó a participar como ponente en el Talent Arena, una feria de tres días que forma parte del Mobile World Congress, dentro de la mesa "Mujeres, Competencias Digitales i Futuro Laboral: el rol de Barcelona Activa en el empoderamiento tecnológico", donde compartí mi visión sobre la mujer en el ecosistema STEAM y el valor real de reinventarse en esta industria.',
       image: '/images/laia/photo-grid/5.jpg'
     },
     {
@@ -100,7 +100,7 @@ const laiaAbout: Record<string, AboutChapter[]> = {
     },
     {
       title: 'Filosofía profesional',
-      text: 'El usuario es el centro de mi filosofía profesional, personalmente veo la tecnología como el puente que construimos para caminar hacia el futuro. Hoy sigo aplicando la misma curiosidad del primer día, combinando rigor técnico con sensibilidad visual en cada desafío que asumo.',
+      text: 'El usuario es el centro de mi filosofía profesional. Personalmente veo la tecnología como el puente que construimos para caminar hacia el futuro. Hoy sigo aplicando la misma curiosidad del primer día, combinando rigor técnico con sensibilidad visual en cada desafío que asumo.',
       image: '/images/laia/photo-grid/9.jpg'
     },
     {
@@ -132,7 +132,7 @@ const laiaAbout: Record<string, AboutChapter[]> = {
     },
     {
       title: 'Talent Arena i propòsit',
-      text: 'La nostra premissa és clara: necessitem salvar els barris i fer de la tecnologia una aliada, i no una enemiga, perquè les nostres ciutats creixin al servei de les persones, i no en contra. Aquest canvi de rumb em va portar a participar com a ponent al Talent Arena, dins la taula "Mujeres, Competencias Digitales i Futuro Laboral: el rol de Barcelona Activa en el empoderamiento tecnológico" (Dones, Competències Digitals i Futur Laboral: el rol de Barcelona Activa en l\'empoderament tecnològic), on vaig compartir la meva visió sobre la dona en l\'ecosistema STEAM i el valor real de reinventar-se en aquesta indústria.',
+      text: 'La nostra premissa és clara: necessitem salvar els barris i fer de la tecnologia una aliada, i no una enemiga, perquè les nostres ciutats creixin al servei de les persones, i no en contra. Aquest canvi de rumb em va portar a participar com a ponent al Talent Arena, una fira de tres dies que forma part del Mobile World Congress, dins la taula "Mujeres, Competencias Digitales i Futuro Laboral: el rol de Barcelona Activa en el empoderamiento tecnológico" (Dones, Competències Digitals i Futur Laboral: el rol de Barcelona Activa en l\'empoderament tecnològic), on vaig compartir la meva visió sobre la dona en l\'ecosistema STEAM i el valor real de reinventar-se en aquesta indústria.',
       image: '/images/laia/photo-grid/5.jpg'
     },
     {
@@ -152,7 +152,7 @@ const laiaAbout: Record<string, AboutChapter[]> = {
     },
     {
       title: 'Filosofia professional',
-      text: "L'usuari és el centre de la meva filosofia professional; personalment veig la tecnologia com el pont que construïm per caminar cap al futur. Avui continuo aplicant la mateixa curiositat del primer dia, combinant rigor tècnic amb sensibilitat visual en cada repte que assumeixo.",
+      text: "L'usuari és el centre de la meva filosofia professional. Personalment veig la tecnologia com el pont que construïm per caminar cap al futur. Avui continuo aplicant la mateixa curiositat del primer dia, combinant rigor tècnic amb sensibilitat visual en cada repte que assumeixo.",
       image: '/images/laia/photo-grid/9.jpg'
     },
     {
