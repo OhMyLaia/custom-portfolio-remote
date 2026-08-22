@@ -11,14 +11,24 @@ const navLinks = computed(() => [
 ])
 
 const isOpen = ref(false)
+const header = ref<HTMLElement | null>(null)
 
 function closeMenu() {
   isOpen.value = false
 }
+
+function onClickOutside(event: MouseEvent) {
+  if (isOpen.value && header.value && !header.value.contains(event.target as Node)) {
+    closeMenu()
+  }
+}
+
+onMounted(() => document.addEventListener('click', onClickOutside))
+onUnmounted(() => document.removeEventListener('click', onClickOutside))
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 bg-black text-foreground md:p-6">
+  <header ref="header" class="sticky top-0 z-50 bg-black text-foreground md:p-6">
     <div class="px-4">
       <div class="flex items-center justify-between py-4">
         <a
