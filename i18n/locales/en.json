@@ -33,6 +33,10 @@
   "press": {
     "empty": "No press mentions yet."
   },
+  "footer": {
+    "kicker": "Say hello",
+    "newJoke": "Tell me another one"
+  },
   "contact": {
     "name": "Name",
     "email": "Email",

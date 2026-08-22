@@ -33,6 +33,10 @@
   "press": {
     "empty": "Todavía no hay menciones en prensa."
   },
+  "footer": {
+    "kicker": "Saluda",
+    "newJoke": "Cuéntame otro"
+  },
   "contact": {
     "name": "Nombre",
     "email": "Correo electrónico",

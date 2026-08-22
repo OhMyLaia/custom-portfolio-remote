@@ -33,6 +33,10 @@
   "press": {
     "empty": "Encara no hi ha mencions a premsa."
   },
+  "footer": {
+    "kicker": "Saluda",
+    "newJoke": "Explica'n un altre"
+  },
   "contact": {
     "name": "Nom",
     "email": "Correu electrònic",
