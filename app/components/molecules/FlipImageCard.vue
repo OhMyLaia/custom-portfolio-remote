@@ -40,17 +40,15 @@ onMounted(() => {
     @keydown.space.prevent="toggle"
   >
     <div class="flip-card-inner absolute inset-0" :class="{ 'is-active': isActive }">
-      <div class="flip-card-face flip-card-front absolute inset-0 overflow-hidden bg-brand-primary">
+      <div
+        class="flip-card-face flip-card-front absolute inset-0 overflow-hidden"
+        :class="image ? 'bg-brand-primary' : 'bg-foreground'"
+      >
         <img
           v-if="image"
           :src="image"
           :alt="title"
           class="absolute inset-0 h-full w-full object-cover"
-        />
-        <div
-          v-else
-          class="absolute inset-0 bg-black"
-          aria-hidden="true"
         />
       </div>
 
